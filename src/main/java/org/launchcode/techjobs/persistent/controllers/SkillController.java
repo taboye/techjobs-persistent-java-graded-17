@@ -48,7 +48,7 @@ public class SkillController {
         }
     }
     //Add an index method that responds at /skills with a list of all skills in the database.
-    @GetMapping("")
+    @GetMapping("/")
     public String index(Model model) {
         //model.addAttribute("title", "All Skills");
         model.addAttribute("skills", skillRepository.findAll());

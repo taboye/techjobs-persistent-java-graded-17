@@ -22,7 +22,7 @@ public class EmployerController {
     private EmployerRepository employerRepository;
 
     //Add an index method that responds at /employers with a list of all employers in the database.
-    @GetMapping("")
+    @GetMapping("/")
     public String index(Model model) {
         //model.addAttribute("title", "All Employers");
         model.addAttribute("employers", employerRepository.findAll());

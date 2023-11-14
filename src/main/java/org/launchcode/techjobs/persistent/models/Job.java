@@ -36,9 +36,9 @@ public class Job extends AbstractEntity {
 //        this.employer = anEmployer;
 //        this.skills = someSkills;
 //    }
-    public Job(Employer aemployer, List someSkills) {
+    public Job(Employer anEmployer, List someSkills) {
         super();
-        this.employer = aemployer;
+        this.employer = anEmployer;
         this.skills = someSkills;
     }
 
